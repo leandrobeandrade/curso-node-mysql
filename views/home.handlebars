@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row">
+        <div class="posts">
+            <div class="card">
+                <h3 class="text-center">Listas de Posts</h3> <br>
+                {{#each posts}}
+                <h5 class="card-header">{{titulo}}</h5>
+                <div class="card-body">
+                    <p class="card-text">{{content}}</p>
+                    <a href="/deletar/{{id}}">
+                        <button class="btn btn-sm btn-danger float-right">Deletar</button>
+                    </a>
+                    <a href="/editar/{{id}}"><button class="btn btn-sm btn-warning float-right mr-2 text-white">Editar</button></a>
+                </div> <br>
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="criar">
+            <a href="/cad" class="btn btn-primary btn-block">Criar um post</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        margin: 0px
+    }
+    .posts {
+        width: 100vw;
+        height: 80vh;
+        background: #fff;
+        display: block;
+        border-radius: 8px;
+    /*  display: flex;
+        flex-direction: row;
+        justify-content: center;   /* Alinha ao centro horizontalmente
+        align-items: center        /* Alinha ao centro verticalmente */
+    }
+    .card {
+        margin: 0 auto;
+        top: 30px;
+        padding: 15px;
+        width: 500px;
+        height: 470px;
+        border: solid 1px #ccc;
+        overflow-y: scroll;
+    }
+    .card::-webkit-scrollbar-track {
+        background-color: #F4F4F4;
+    }
+    .card::-webkit-scrollbar {
+        width: 6px;
+        background: #F4F4F4;
+    }
+    .card::-webkit-scrollbar-thumb {
+        background: #dad7d7;
+    }
+    .card-header {
+        border: solid 1px #ccc;
+    }
+    .card-body {
+        border: solid 1px #ccc;
+    }
+    h3 {
+        color: #fff;
+        background-color: rgb(241, 153, 21);
+        padding: 10px;
+    }
+    .criar{
+        margin: 0 auto;
+        padding: 15px;
+        width: 40%;
+    }
+</style>
