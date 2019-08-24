@@ -12,3 +12,7 @@ link do curso: https://www.youtube.com/playlist?list=PLJ_KhUnlXUPtbtLwaxxUxHqvcN
 # Requisitos
 
 - Possuir Mysql instalado na máquina
+
+# Resultado
+
+![alt text](https://github.com/leandrobeandrade/curso-node-mysql/blob/master/Postagens-com-Node.gif)
